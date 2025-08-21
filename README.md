@@ -46,7 +46,7 @@ on [IEC 61162-1:2016 (Edition 5.0 2016-08)](https://webstore.iec.ch/publication/
 | [ALF](./alf.go)    | Alert sentence                                                      |                                                                                                |
 | [ALR](./alr.go)    | Set alarm state                                                     |                                                                                                |
 | [APB](./apb.go)    | Heading/track controller (autopilot) sentence B                     | [gpsd](https://gpsd.gitlab.io/gpsd/NMEA.html#_apb_autopilot_sentence_b)                        |
-| [ARC](./arc.go)    | Alert command refused                                               |                                                                                                |
+| [ARC](./arc.go)    | Alert command refused                                               |                     |
 | [BBM](./bbm.go)    | AIS broadcast binary message                                        |                                                                                                |
 | [BEC](./bec.go)    | Bearing and distance to waypoint, Dead reckoning                    | [1](http://www.nmea.de/nmea0183datensaetze.html#bec)                                           |
 | [BOD](./bod.go)    | Bearing origin to destination                                       | [gpsd](https://gpsd.gitlab.io/gpsd/NMEA.html#_bod_bearing_waypoint_to_waypoint)                |
@@ -174,6 +174,7 @@ on [IEC 61162-1:2016 (Edition 5.0 2016-08)](https://webstore.iec.ch/publication/
 
 | Proprietary sentence type | Description                                                                                     | References                                                                                         |
 |---------------------------|-------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
+| [PASHR](./pashr.go)  | Proprietary - Heading, Pitch, Roll, Heave, Time                     |                [gpsd](https://gpsd.gitlab.io/gpsd/NMEA.html#_pashr_rt300_proprietary_roll_and_pitch_sentence) [trimble](https://receiverhelp.trimble.com/oem-gnss/nmea0183-messages-pashr.html)                     | 
 | [PNG](./pgn.go)           | Transfer NMEA2000 frame as NMEA0183 sentence (ShipModul MiniPlex-3)                             | [1](https://opencpn.org/wiki/dokuwiki/lib/exe/fetch.php?media=opencpn:software:mxpgn_sentence.pdf) |
 | [PCDIN](./pcdin.go)       | Transfer NMEA2000 frame as NMEA0183 sentence (SeaSmart.Net Protocol)                            | [1](http://www.seasmart.net/pdf/SeaSmart_HTTP_Protocol_RevG_043012.pdf)                            |
 | [PGRME](./pgrme.go)       | Estimated Position Error (Garmin proprietary sentence)                                          | [1](http://aprs.gids.nl/nmea/#rme)                                                                 |

@@ -445,6 +445,8 @@ func (p *SentenceParser) Parse(raw string) (Sentence, error) {
 			return newPKNDS(s)
 		case TypePKWDWPL:
 			return newPKWDWPL(s)
+		case TypePASHR:
+			return newPASHR(s)
 		}
 	}
 	if s.Raw[0] == SentenceStartEncapsulated[0] {
